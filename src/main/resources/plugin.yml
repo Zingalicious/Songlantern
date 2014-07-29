@@ -1,0 +1,17 @@
+main: us.zingalicio.songlantern.Songlantern
+name: Songlantern
+version: ${project.version}
+description: ${project.description}
+author: zingten11
+database: false
+depend: [ZingLib, PermissionsEx]
+commands:
+  message:
+    aliases: msg
+  reply:
+    aliases: r
+  broadcast:
+  say:
+  sayas:
+  songlantern:
+    aliases: sl
