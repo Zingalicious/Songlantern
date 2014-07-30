@@ -1,6 +1,7 @@
 package us.zingalicio.songlantern;
 
 import us.zingalicio.songlantern.commands.ChatCommand;
+import us.zingalicio.songlantern.commands.SonglanternCommand;
 import us.zingalicio.songlantern.events.ChatListener;
 import us.zingalicio.songlantern.events.JoinListener;
 import us.zingalicio.zinglib.plugin.ZingPlugin;
@@ -8,6 +9,7 @@ import us.zingalicio.zinglib.plugin.ZingPlugin;
 public class Songlantern extends ZingPlugin
 {
 	private ChatCommand chatCommand;
+	private SonglanternCommand slCommand;
 	private ChatListener chatListener;
 	private JoinListener joinListener;
 
@@ -19,6 +21,7 @@ public class Songlantern extends ZingPlugin
 	public void onEnable()
 	{
 		this.chatCommand = new ChatCommand(this);
+		this.slCommand = new SonglanternCommand(this);
 		registerCommands();
 		registerListeners();
 	}
@@ -30,6 +33,7 @@ public class Songlantern extends ZingPlugin
 		getCommand("broadcast").setExecutor(chatCommand);
 		getCommand("say").setExecutor(chatCommand);
 		getCommand("sayas").setExecutor(chatCommand);
+		getCommand("songlantern").setExecutor(slCommand);
 	}
 	
 	private void registerListeners()
