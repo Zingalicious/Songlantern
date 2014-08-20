@@ -9,7 +9,7 @@ import ru.tehkode.permissions.PermissionUser;
 import ru.tehkode.permissions.bukkit.PermissionsEx;
 
 import us.zingalicio.songlantern.Songlantern;
-import us.zingalicio.zinglib.util.ChatUtil;
+import us.zingalicio.cordstone.util.ChatUtil;
 
 public class JoinListener implements Listener
 {
@@ -31,11 +31,12 @@ public class JoinListener implements Listener
 		}
 		if(!user.getOption("joinmessage").equals(""))
 		{
-			event.setJoinMessage(ChatUtil.formatMessage(event.getPlayer(), user.getOption("displayname")));
+			event.setJoinMessage(ChatUtil.formatMessage(event.getPlayer(), user.getOption("joinmessage")));
 		}
 		else
 		{
 			user.setOption("joinmessage", "&6%player &6has entered the fringe.");
+			event.setJoinMessage(ChatUtil.formatMessage(event.getPlayer(), user.getOption("joinmessage")));
 		}
 	}
 }

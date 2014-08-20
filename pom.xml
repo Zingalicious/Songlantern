@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>us.zingalicio</groupId>
   <artifactId>Songlantern</artifactId>
-  <version>0.1.0</version>
+  <version>0.2.0</version>
   <name>Songlantern</name>
   <description>Zingalicious' Chat Plugin</description>
   <organization>
@@ -42,8 +42,8 @@
         </dependency>
         <dependency>
         	<groupId>us.zingalicio</groupId>
-        	<artifactId>ZingLib</artifactId>
-        	<version>0.1.0</version>
+        	<artifactId>Cordstone</artifactId>
+        	<version>0.1.1</version>
         	<scope>provided</scope>
         </dependency>
     </dependencies>

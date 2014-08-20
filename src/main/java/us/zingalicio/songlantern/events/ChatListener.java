@@ -5,7 +5,7 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.player.AsyncPlayerChatEvent;
 
 import us.zingalicio.songlantern.Songlantern;
-import us.zingalicio.zinglib.util.ChatUtil;
+import us.zingalicio.cordstone.util.ChatUtil;
 
 public final class ChatListener implements Listener
 {

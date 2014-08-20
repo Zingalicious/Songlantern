@@ -4,7 +4,7 @@ import us.zingalicio.songlantern.commands.ChatCommand;
 import us.zingalicio.songlantern.commands.SonglanternCommand;
 import us.zingalicio.songlantern.events.ChatListener;
 import us.zingalicio.songlantern.events.JoinListener;
-import us.zingalicio.zinglib.plugin.ZingPlugin;
+import us.zingalicio.cordstone.ZingPlugin;
 
 public class Songlantern extends ZingPlugin
 {

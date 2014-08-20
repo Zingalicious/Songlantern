@@ -7,9 +7,9 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.plugin.PluginManager;
 
 import us.zingalicio.songlantern.Songlantern;
-import us.zingalicio.zinglib.util.ConfigUtil;
-import us.zingalicio.zinglib.util.MessageUtil;
-import us.zingalicio.zinglib.util.PermissionsUtil;
+import us.zingalicio.cordstone.util.ConfigUtil;
+import us.zingalicio.cordstone.util.MessageUtil;
+import us.zingalicio.cordstone.util.PermissionsUtil;
 
 public class SonglanternCommand implements CommandExecutor
 {
